@@ -30,16 +30,21 @@ python -m venv env
 ```
 pip install -r .\requirements.txt
 ```  
+<br>
+
+### 2. 環境設定
+.envファイルを開きIPアドレスとポート番号を編集する．  
+<br>
+
   
-  
-### 2. webサーバを実行  
+### 3. webサーバを実行  
 実行するだけなら`--reload`はなくてもよい．
 ```
 uvicorn main:app --reload
 ```  
+<br>
   
-  
-### 3. ブラウザからアクセス  
+### 4. ブラウザからアクセス  
 `http://localhost:8000/docs`にアクセスする．<br>
 ページ内にPOSTの枠があり，`/api/lights_and_buzzer/[lights_and_buzzer]`と書かれた部分をクリックする．  
 「Try it out」をクリックし，「lights_and_buzzer」の部分に**6ケタの**数字を入力し「Execute」をクリックすると実行できる．  
