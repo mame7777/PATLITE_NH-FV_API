@@ -41,7 +41,11 @@ pip install -r .\requirements.txt
 実行するだけなら`--reload`はなくてもよい．
 ```
 uvicorn main:app --reload
-```  
+```
+外部からの接続も許可するなら，以下を実行
+```
+uvicorn main:app --reload  --host 0.0.0.0
+```
 <br>
   
 ### 4. ブラウザからアクセス  
